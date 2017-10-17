@@ -1,0 +1,196 @@
+\hypertarget{functions_8c}{}\section{F\+:/\+Proiect/\+Facultate/\+PT -\/ Dictionary/functions.c File Reference}
+\label{functions_8c}\index{F\+:/\+Proiect/\+Facultate/\+P\+T -\/ Dictionary/functions.\+c@{F\+:/\+Proiect/\+Facultate/\+P\+T -\/ Dictionary/functions.\+c}}
+
+
+File where all functions are found.  
+
+
+{\ttfamily \#include \char`\"{}header.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{functions_8c_af3e309862e96c6261d5319047df0ba43}{add\+\_\+word} (struct \hyperlink{structdictionary}{dictionary} $\ast$\hyperlink{structdictionary}{dictionary}, char word\mbox{[}100\mbox{]})
+\begin{DoxyCompactList}\small\item\em Adds a word to the dictionary. \end{DoxyCompactList}\item 
+void \hyperlink{functions_8c_aa7361a041bca7045dc26e2800b6aba3e}{add\+\_\+definition} (struct \hyperlink{structdictionary}{dictionary} $\ast$\hyperlink{structdictionary}{dictionary}, char word\mbox{[}100\mbox{]}, char definition\mbox{[}100\mbox{]})
+\begin{DoxyCompactList}\small\item\em Adds a definition to a current word in our dictionary. \end{DoxyCompactList}\item 
+void \hyperlink{functions_8c_a1fea12e4b53f2178ec860f8c95ea4eaf}{change\+\_\+word} (struct dicitonary $\ast$\hyperlink{structdictionary}{dictionary}, char word\mbox{[}100\mbox{]}, char new\+\_\+word\mbox{[}100\mbox{]})
+\begin{DoxyCompactList}\small\item\em Change a current word with a new one. \end{DoxyCompactList}\item 
+void \hyperlink{functions_8c_acbac702edbcc438057da1f513d9e304f}{change\+\_\+definition} (struct dicitonary $\ast$\hyperlink{structdictionary}{dictionary}, char word\mbox{[}100\mbox{]}, char definition\mbox{[}100\mbox{]}, char new\+\_\+definition\mbox{[}100\mbox{]})
+\begin{DoxyCompactList}\small\item\em Change a current definition of a word with a new one. \end{DoxyCompactList}\item 
+void \hyperlink{functions_8c_afc5dc60fd6532207c0b07bef14e09d56}{show\+\_\+all\+\_\+words} (struct \hyperlink{structdictionary}{dictionary} $\ast$\hyperlink{structdictionary}{dictionary})
+\begin{DoxyCompactList}\small\item\em Prints to the console all words and their definitions. \end{DoxyCompactList}\item 
+void \hyperlink{functions_8c_aea07e1c95474f4b90964b3ac2103102e}{show\+\_\+all\+\_\+definitions} (struct \hyperlink{structdictionary}{dictionary} $\ast$\hyperlink{structdictionary}{dictionary}, char word\mbox{[}100\mbox{]})
+\begin{DoxyCompactList}\small\item\em Prints to the console all definitions of a given word. \end{DoxyCompactList}\item 
+void \hyperlink{functions_8c_a0d13cc48433ca8bf3ffb44181c9b8f67}{delete\+\_\+word} (struct \hyperlink{structdictionary}{dictionary} $\ast$\hyperlink{structdictionary}{dictionary}, char word\mbox{[}100\mbox{]})
+\begin{DoxyCompactList}\small\item\em Deletes from the dictionary the given word. \end{DoxyCompactList}\item 
+void \hyperlink{functions_8c_a79f15adf3dc4e81064983083caf535dd}{delete\+\_\+definition} (struct \hyperlink{structdictionary}{dictionary} $\ast$\hyperlink{structdictionary}{dictionary}, char word\mbox{[}100\mbox{]}, char definition\mbox{[}100\mbox{]})
+\begin{DoxyCompactList}\small\item\em Deletes a definition of an existing word. \end{DoxyCompactList}\item 
+void \hyperlink{functions_8c_a83d80bdde4ba689685f95a87bca5b705}{save\+\_\+to\+\_\+file} (struct \hyperlink{structdictionary}{dictionary} $\ast$\hyperlink{structdictionary}{dictionary})
+\begin{DoxyCompactList}\small\item\em Prints our dictionary to a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File where all functions are found. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{functions_8c_aa7361a041bca7045dc26e2800b6aba3e}\label{functions_8c_aa7361a041bca7045dc26e2800b6aba3e}} 
+\index{functions.\+c@{functions.\+c}!add\+\_\+definition@{add\+\_\+definition}}
+\index{add\+\_\+definition@{add\+\_\+definition}!functions.\+c@{functions.\+c}}
+\subsubsection{\texorpdfstring{add\+\_\+definition()}{add\_definition()}}
+{\footnotesize\ttfamily void add\+\_\+definition (\begin{DoxyParamCaption}\item[{struct \hyperlink{structdictionary}{dictionary} $\ast$}]{dictionary,  }\item[{char}]{word\mbox{[}100\mbox{]},  }\item[{char}]{definition\mbox{[}100\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Adds a definition to a current word in our dictionary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dictionary} & is the linked list where the definition array is stored. \\
+\hline
+{\em word} & is the word for which the definition will be added. \\
+\hline
+{\em definition} & is the definition that will be added for the given word. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8c_af3e309862e96c6261d5319047df0ba43}\label{functions_8c_af3e309862e96c6261d5319047df0ba43}} 
+\index{functions.\+c@{functions.\+c}!add\+\_\+word@{add\+\_\+word}}
+\index{add\+\_\+word@{add\+\_\+word}!functions.\+c@{functions.\+c}}
+\subsubsection{\texorpdfstring{add\+\_\+word()}{add\_word()}}
+{\footnotesize\ttfamily void add\+\_\+word (\begin{DoxyParamCaption}\item[{struct \hyperlink{structdictionary}{dictionary} $\ast$}]{dictionary,  }\item[{char}]{word\mbox{[}100\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Adds a word to the dictionary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dictionary} & is the linked list where the word will be added. \\
+\hline
+{\em word} & is the word that will be added. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8c_acbac702edbcc438057da1f513d9e304f}\label{functions_8c_acbac702edbcc438057da1f513d9e304f}} 
+\index{functions.\+c@{functions.\+c}!change\+\_\+definition@{change\+\_\+definition}}
+\index{change\+\_\+definition@{change\+\_\+definition}!functions.\+c@{functions.\+c}}
+\subsubsection{\texorpdfstring{change\+\_\+definition()}{change\_definition()}}
+{\footnotesize\ttfamily void change\+\_\+definition (\begin{DoxyParamCaption}\item[{struct dicitonary $\ast$}]{dictionary,  }\item[{char}]{word\mbox{[}100\mbox{]},  }\item[{char}]{definition\mbox{[}100\mbox{]},  }\item[{char}]{new\+\_\+definition\mbox{[}100\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Change a current definition of a word with a new one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dictionary} & is the linked list where the definition is searched. \\
+\hline
+{\em word} & is the word that we search for in order to find his definition. \\
+\hline
+{\em definition} & is the definition we search for in order to replace it. \\
+\hline
+{\em new\+\_\+definition} & is the new definition that will replace the old one. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8c_a1fea12e4b53f2178ec860f8c95ea4eaf}\label{functions_8c_a1fea12e4b53f2178ec860f8c95ea4eaf}} 
+\index{functions.\+c@{functions.\+c}!change\+\_\+word@{change\+\_\+word}}
+\index{change\+\_\+word@{change\+\_\+word}!functions.\+c@{functions.\+c}}
+\subsubsection{\texorpdfstring{change\+\_\+word()}{change\_word()}}
+{\footnotesize\ttfamily void change\+\_\+word (\begin{DoxyParamCaption}\item[{struct dicitonary $\ast$}]{dictionary,  }\item[{char}]{word\mbox{[}100\mbox{]},  }\item[{char}]{new\+\_\+word\mbox{[}100\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Change a current word with a new one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dictionary} & is the linked list where the word is searched. \\
+\hline
+{\em word} & is the word that we search for. \\
+\hline
+{\em new\+\_\+word} & is the word that will replace the old one. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8c_a79f15adf3dc4e81064983083caf535dd}\label{functions_8c_a79f15adf3dc4e81064983083caf535dd}} 
+\index{functions.\+c@{functions.\+c}!delete\+\_\+definition@{delete\+\_\+definition}}
+\index{delete\+\_\+definition@{delete\+\_\+definition}!functions.\+c@{functions.\+c}}
+\subsubsection{\texorpdfstring{delete\+\_\+definition()}{delete\_definition()}}
+{\footnotesize\ttfamily void delete\+\_\+definition (\begin{DoxyParamCaption}\item[{struct \hyperlink{structdictionary}{dictionary} $\ast$}]{dictionary,  }\item[{char}]{word\mbox{[}100\mbox{]},  }\item[{char}]{definition\mbox{[}100\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Deletes a definition of an existing word. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dictionary} & is the linked list from where data will be deleted. \\
+\hline
+{\em word} & is the word that we search for in order to delete it\textquotesingle{}s definition. \\
+\hline
+{\em definition} & is the definition that we search in order to delete it. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8c_a0d13cc48433ca8bf3ffb44181c9b8f67}\label{functions_8c_a0d13cc48433ca8bf3ffb44181c9b8f67}} 
+\index{functions.\+c@{functions.\+c}!delete\+\_\+word@{delete\+\_\+word}}
+\index{delete\+\_\+word@{delete\+\_\+word}!functions.\+c@{functions.\+c}}
+\subsubsection{\texorpdfstring{delete\+\_\+word()}{delete\_word()}}
+{\footnotesize\ttfamily void delete\+\_\+word (\begin{DoxyParamCaption}\item[{struct \hyperlink{structdictionary}{dictionary} $\ast$}]{dictionary,  }\item[{char}]{word\mbox{[}100\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Deletes from the dictionary the given word. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dictionary} & is the linked list from where data will be deleted. \\
+\hline
+{\em word} & is the word that we search for in order to delete it. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8c_a83d80bdde4ba689685f95a87bca5b705}\label{functions_8c_a83d80bdde4ba689685f95a87bca5b705}} 
+\index{functions.\+c@{functions.\+c}!save\+\_\+to\+\_\+file@{save\+\_\+to\+\_\+file}}
+\index{save\+\_\+to\+\_\+file@{save\+\_\+to\+\_\+file}!functions.\+c@{functions.\+c}}
+\subsubsection{\texorpdfstring{save\+\_\+to\+\_\+file()}{save\_to\_file()}}
+{\footnotesize\ttfamily void save\+\_\+to\+\_\+file (\begin{DoxyParamCaption}\item[{struct \hyperlink{structdictionary}{dictionary} $\ast$}]{dictionary }\end{DoxyParamCaption})}
+
+
+
+Prints our dictionary to a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dictionary} & is the linked list from where data will be printed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8c_aea07e1c95474f4b90964b3ac2103102e}\label{functions_8c_aea07e1c95474f4b90964b3ac2103102e}} 
+\index{functions.\+c@{functions.\+c}!show\+\_\+all\+\_\+definitions@{show\+\_\+all\+\_\+definitions}}
+\index{show\+\_\+all\+\_\+definitions@{show\+\_\+all\+\_\+definitions}!functions.\+c@{functions.\+c}}
+\subsubsection{\texorpdfstring{show\+\_\+all\+\_\+definitions()}{show\_all\_definitions()}}
+{\footnotesize\ttfamily void show\+\_\+all\+\_\+definitions (\begin{DoxyParamCaption}\item[{struct \hyperlink{structdictionary}{dictionary} $\ast$}]{dictionary,  }\item[{char}]{word\mbox{[}100\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Prints to the console all definitions of a given word. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dictionary} & is the linked list from where data will be printed. \\
+\hline
+{\em word} & is the word that we will print definitions for. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8c_afc5dc60fd6532207c0b07bef14e09d56}\label{functions_8c_afc5dc60fd6532207c0b07bef14e09d56}} 
+\index{functions.\+c@{functions.\+c}!show\+\_\+all\+\_\+words@{show\+\_\+all\+\_\+words}}
+\index{show\+\_\+all\+\_\+words@{show\+\_\+all\+\_\+words}!functions.\+c@{functions.\+c}}
+\subsubsection{\texorpdfstring{show\+\_\+all\+\_\+words()}{show\_all\_words()}}
+{\footnotesize\ttfamily void show\+\_\+all\+\_\+words (\begin{DoxyParamCaption}\item[{struct \hyperlink{structdictionary}{dictionary} $\ast$}]{dictionary }\end{DoxyParamCaption})}
+
+
+
+Prints to the console all words and their definitions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dictionary} & is the linked list from where data will be printed. \\
+\hline
+\end{DoxyParams}

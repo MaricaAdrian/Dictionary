@@ -1,0 +1,4 @@
+Word: SmartPhone
+Definition 1: A phone that contains a smart operating system.
+Definition 2: E.G. iOS, Android
+
